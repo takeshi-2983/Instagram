@@ -45,8 +45,9 @@ class PostTableViewCell: UITableViewCell {
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
         
         //追加！！
-        self.comment.text = "\(postData.name!) : \(postData.comment)"
-        //for comment in postData.comment { self.comment.text! += "\(comment)\n" }
+        //self.comment.text = "\(postData.name!) : \(postData.comment)"
+        for comment in postData.comment { self.comment.text! += "\(postData.name!) : \(comment)\n" }
+        
         
         // 日時の表示
         self.dateLabel.text = ""

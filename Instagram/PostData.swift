@@ -32,7 +32,6 @@ class PostData: NSObject {
         //追加！！
         if let comment = postDic["comment"] as? [String] {
             self.comment = comment
-            
         }
         
         let timestamp = postDic["date"] as? Timestamp
